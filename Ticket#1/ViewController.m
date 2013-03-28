@@ -28,23 +28,26 @@
         surName.frame = CGRectMake(180,156,100,21);
         dateOfBirth.frame = CGRectMake(180,196,100,21);
         bio.frame = CGRectMake(57,244,249,120);
-        contacts.frame = CGRectMake(57,380,223,21);
+        contacts.frame = CGRectMake(0,0,223,21);
+        [self.view setNeedsDisplay];
     } else {
+        NSLog(@"Landscape!!!!!!!!!!");
         //—-if rotating to landscape mode—-
         myImage.frame = CGRectMake(20, 43, 128, 128);
-        lastName.frame = CGRectMake(195,64,42,21);
-        firstName.frame = CGRectMake(306,64,42,21);
-        surName.frame = CGRectMake(413,64,42,21);
-        dateOfBirth.frame = CGRectMake(195,117,42,21);
+        lastName.frame = CGRectMake(195,64,100,21);
+        firstName.frame = CGRectMake(306,64,100,21);
+        surName.frame = CGRectMake(413,64,100,21);
+        dateOfBirth.frame = CGRectMake(195,117,100,21);
         bio.frame = CGRectMake(284,216,171,120);
-        contacts.frame = CGRectMake(188,241,42,21);
+        contacts.frame = CGRectMake(188,241,100,21);
+        [self.view setNeedsDisplay];
     }
 }
 
-- (void)willAnimateSecondHalfOfRotationFromInterfaceOrientation:
+/*- (void)willAnimateSecondHalfOfRotationFromInterfaceOrientation:
 (UIInterfaceOrientation)fromInterfaceOrientation duration:(NSTimeInterval)duration {
     [self positionViews];
-}
+}*/
 
 
 - (void)viewDidLoad
@@ -72,6 +75,28 @@
         myImage.image=[UIImage imageWithData:imageData];
     }
 }
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
