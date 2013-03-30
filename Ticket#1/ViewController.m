@@ -16,7 +16,7 @@
 @implementation ViewController
 @synthesize lastName,firstName,surName,dateOfBirth,bio,contacts,myImage;
 
-
+////
 -(void) positionViews {
     UIInterfaceOrientation destOrientation = self.interfaceOrientation;
     if (destOrientation == UIInterfaceOrientationPortrait ||
