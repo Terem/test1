@@ -31,12 +31,12 @@
         NSLog(@"Portrait!!!!!!!!!!");
     } else {
         myImage.frame = CGRectMake(20, 43, 128, 128);
-        lastName.frame = CGRectMake(160,64,100,21);
-        firstName.frame = CGRectMake(260,64,100,21);
-        surName.frame = CGRectMake(360,64,100,21);
-        dateOfBirth.frame = CGRectMake(160,100,100,21);
-        bio.frame = CGRectMake(160,160,300,80);
-        contacts.frame = CGRectMake(160,270,200,21);
+        lastName.frame = CGRectMake(160,24,100,21);
+        firstName.frame = CGRectMake(260,24,100,21);
+        surName.frame = CGRectMake(360,24,100,21);
+        dateOfBirth.frame = CGRectMake(160,60,100,21);
+        bio.frame = CGRectMake(160,120,300,80);
+        contacts.frame = CGRectMake(160,230,200,21);
         NSLog(@"Landscape!!!!!!!!!!");
     }
 }
