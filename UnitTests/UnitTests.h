@@ -8,7 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface UnitTests : SenTestCase
-{ViewController *controller;}
+
+@property(nonatomic,readwrite,weak) ViewController *viewController;
+
 @end

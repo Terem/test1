@@ -66,6 +66,7 @@
         contacts.text=[results stringForColumn:@"contacts"];
         NSData *imageData=[results dataForColumn:@"foto"];
         NSLog(@"FOTO : %@",imageData);
+        NSLog(@"FirstName : %@",firstName);
         myImage.image=[UIImage imageWithData:imageData];
     }
     [self positionViews];

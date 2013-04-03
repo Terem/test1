@@ -7,16 +7,16 @@
 //
 
 #import "UnitTests.h"
-#import "ViewController.h"
+
+
 
 @implementation UnitTests
+@synthesize viewController=_viewController;
 
 - (void)setUp
 {
     [super setUp];
-    //controller=[[ViewController alloc]init];
-    
-    // Set-up code here.
+   
 }
 
 - (void)tearDown
@@ -29,10 +29,14 @@
 - (void)testOutlets
 {
     //STComposeString(@"Unit tests are not implemented yet in UnitTests");
-   // STAssertEqualObjects(@"Tereshkin", [(UILabel*)[controller viewWithTag:1]text], @"Owner is ni Tereshkin")
+    //NSLog(@"FirstName!?????!!!!!!!!!! : %@",self.viewController.firstName.text);
+    STAssertNil(self.viewController.firstName.text, @"firstName.text is void");
+    [self.viewController viewDidLoad];
+     self.viewController.firstName.text=@"Tqwertt";
     
-    STAssertEqualObjects(@"Tereshkin",
-                         [[controller viewWithTag:1]text], @"Owner is no Tereshkin");
+    //NSLog(@"FirstName!!!!!!!!!!! : %@",self.viewController);
+    STAssertNotNil(self.viewController.firstName.text, @"firstName.text is void %@",self.viewController.firstName.text);
+
 }
 
 @end
