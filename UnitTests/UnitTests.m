@@ -11,7 +11,7 @@
 
 
 @implementation UnitTests
-@synthesize viewController=_viewController;
+//@synthesize viewController=_viewController;
 
 - (void)setUp
 {
@@ -28,15 +28,26 @@
 
 - (void)testOutlets
 {
-    //STComposeString(@"Unit tests are not implemented yet in UnitTests");
-    //NSLog(@"FirstName!?????!!!!!!!!!! : %@",self.viewController.firstName.text);
-    STAssertNil(self.viewController.firstName.text, @"firstName.text is void");
-    [self.viewController viewDidLoad];
-     self.viewController.firstName.text=@"Tqwertt";
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    ViewController *viewController=[storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    STAssertNotNil([viewController view],nil);
+    //viewController.firstName.text=nil;
+    NSLog(@"@@@@@@@@@@@@@@ : %@",viewController.firstName.text);
+    STAssertNotNil(viewController.firstName.text, @"First name is void!!!");
+    STAssertNotNil(viewController.lastName.text, @"Last name is void!!!");
+    STAssertNotNil(viewController.surName.text, @"Sur name is void!!!");
+    STAssertNotNil(viewController.dateOfBirth.text, @"Date of birth is void!!!");
+    STAssertNotNil(viewController.bio.text, @"Biografy is void!!!");
+    STAssertNotNil(viewController.contacts.text, @"Contacts is void!!!");
+    STAssertNotNil(viewController.myImage.image, @"Image is empty!!!");
     
-    //NSLog(@"FirstName!!!!!!!!!!! : %@",self.viewController);
-    STAssertNotNil(self.viewController.firstName.text, @"firstName.text is void %@",self.viewController.firstName.text);
+    STAssertEqualObjects(viewController.firstName.text, @"Andrey", @"First name is nor equal : Andrey");
+    
+     
 
+    
 }
+
+
 
 @end
