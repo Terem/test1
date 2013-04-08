@@ -49,8 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self positionViews];
-	// Do any additional setup after loading the view, typically from a nib.
+    
     NSString *path=[[[NSBundle mainBundle]resourcePath]stringByAppendingPathComponent:@"my_db.sqlite"];
     FMDatabase *database;
     database=[FMDatabase databaseWithPath:path];

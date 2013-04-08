@@ -19,7 +19,6 @@
 		C3445D931700C96600B18C7C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3445D911700C96600B18C7C /* MainStoryboard.storyboard */; };
 		C3445D961700C96600B18C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3445D951700C96600B18C7C /* ViewController.m */; };
 		C3445D9D1700CAD000B18C7C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3445D9C1700CAD000B18C7C /* libsqlite3.0.dylib */; };
-		C3445DE71700DDAB00B18C7C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C3445DCE1700DDAB00B18C7C /* .gitignore */; };
 		C3445DE81700DDAB00B18C7C /* CHANGES_AND_TODO_LIST.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3445DCF1700DDAB00B18C7C /* CHANGES_AND_TODO_LIST.txt */; };
 		C3445DE91700DDAB00B18C7C /* CONTRIBUTORS.txt in Resources */ = {isa = PBXBuildFile; fileRef = C3445DD01700DDAB00B18C7C /* CONTRIBUTORS.txt */; };
 		C3445DEA1700DDAB00B18C7C /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = C3445DD31700DDAB00B18C7C /* FMDatabase+InMemoryOnDiskIO.m */; };
@@ -74,7 +73,6 @@
 		C3445D941700C96600B18C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C3445D951700C96600B18C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3445D9C1700CAD000B18C7C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		C3445DCE1700DDAB00B18C7C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C3445DCF1700DDAB00B18C7C /* CHANGES_AND_TODO_LIST.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES_AND_TODO_LIST.txt; sourceTree = "<group>"; };
 		C3445DD01700DDAB00B18C7C /* CONTRIBUTORS.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CONTRIBUTORS.txt; sourceTree = "<group>"; };
 		C3445DD21700DDAB00B18C7C /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 		C3445DCD1700DDAB00B18C7C /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
-				C3445DCE1700DDAB00B18C7C /* .gitignore */,
 				C3445DCF1700DDAB00B18C7C /* CHANGES_AND_TODO_LIST.txt */,
 				C3445DD01700DDAB00B18C7C /* CONTRIBUTORS.txt */,
 				C3445DD11700DDAB00B18C7C /* extra */,
@@ -359,7 +356,6 @@
 				C3445D8E1700C96600B18C7C /* Default@2x.png in Resources */,
 				C3445D901700C96600B18C7C /* Default-568h@2x.png in Resources */,
 				C3445D931700C96600B18C7C /* MainStoryboard.storyboard in Resources */,
-				C3445DE71700DDAB00B18C7C /* .gitignore in Resources */,
 				C3445DE81700DDAB00B18C7C /* CHANGES_AND_TODO_LIST.txt in Resources */,
 				C3445DE91700DDAB00B18C7C /* CONTRIBUTORS.txt in Resources */,
 				C3445DEB1700DDAB00B18C7C /* fmdb.1 in Resources */,
