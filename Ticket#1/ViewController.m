@@ -74,22 +74,13 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return YES;
-    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait ||
-    //        interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
-    //return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
-    
 }
  
-
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

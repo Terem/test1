@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3445D751700C96600B18C7C"
-               BuildableName = "Ticket#1.app"
-               BlueprintName = "Ticket#1"
-               ReferencedContainer = "container:Ticket#1.xcodeproj">
+               BlueprintIdentifier = "EE4290EE12B42F870088BD94"
+               BuildableName = "libFMDB.a"
+               BlueprintName = "FMDB"
+               ReferencedContainer = "container:fmdb.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3CC0922170B5F870033794E"
-               BuildableName = "UnitTests.octest"
-               BlueprintName = "UnitTests"
-               ReferencedContainer = "container:Ticket#1.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3445D751700C96600B18C7C"
-            BuildableName = "Ticket#1.app"
-            BlueprintName = "Ticket#1"
-            ReferencedContainer = "container:Ticket#1.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3445D751700C96600B18C7C"
-            BuildableName = "Ticket#1.app"
-            BlueprintName = "Ticket#1"
-            ReferencedContainer = "container:Ticket#1.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3445D751700C96600B18C7C"
-            BuildableName = "Ticket#1.app"
-            BlueprintName = "Ticket#1"
-            ReferencedContainer = "container:Ticket#1.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

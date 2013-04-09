@@ -12,6 +12,4 @@
 
 @interface UnitTests : SenTestCase
 
-//@property(nonatomic,readwrite,weak) ViewController *viewController;
-
 @end
