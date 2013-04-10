@@ -31,12 +31,12 @@
         NSLog(@"Portrait!!!!!!!!!!");
     } else {
         myImage.frame = CGRectMake(20, 43, 128, 128);
-        lastName.frame = CGRectMake(160,64,100,21);
-        firstName.frame = CGRectMake(260,64,100,21);
-        surName.frame = CGRectMake(360,64,100,21);
-        dateOfBirth.frame = CGRectMake(160,100,100,21);
-        bio.frame = CGRectMake(160,160,300,80);
-        contacts.frame = CGRectMake(160,270,200,21);
+        lastName.frame = CGRectMake(160,24,100,21);
+        firstName.frame = CGRectMake(260,24,100,21);
+        surName.frame = CGRectMake(360,24,100,21);
+        dateOfBirth.frame = CGRectMake(160,60,100,21);
+        bio.frame = CGRectMake(160,120,300,80);
+        contacts.frame = CGRectMake(160,230,200,21);
         NSLog(@"Landscape!!!!!!!!!!");
     }
 }
@@ -49,8 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self positionViews];
-	// Do any additional setup after loading the view, typically from a nib.
+    
     NSString *path=[[[NSBundle mainBundle]resourcePath]stringByAppendingPathComponent:@"my_db.sqlite"];
     FMDatabase *database;
     database=[FMDatabase databaseWithPath:path];
@@ -66,6 +65,7 @@
         contacts.text=[results stringForColumn:@"contacts"];
         NSData *imageData=[results dataForColumn:@"foto"];
         NSLog(@"FOTO : %@",imageData);
+        NSLog(@"FirstName : %@",firstName);
         myImage.image=[UIImage imageWithData:imageData];
     }
     [self positionViews];
@@ -74,22 +74,13 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return YES;
-    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait ||
-    //        interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
-    //return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
-    
 }
  
-
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
